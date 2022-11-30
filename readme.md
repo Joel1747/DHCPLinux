@@ -16,8 +16,8 @@ services:
         - ./data:/data
 ~~~
 
-## Carpeata _data_
-En esta carpeta tendremos dentro un fichero llamado _dhcpd.conf_ en el cual tendremos la configuración de la subnet de la cual vamos a distribuir _IPs_
+## Carpeta _data_
+crearemos esta carpeta en la cual tendremos dentro un fichero que crearemos llamado _dhcpd.conf_ en el cual tendremos la configuración de la _Red_ de la cual vamos a distribuir _IPs_
 
 ### _dhcpd.conf_ 
 Este fichero tendra que contener algo así, variando en función de lo que necesitemos, donde otorgaremos un rango de la red para repartir IPs,tambien le otorgaremos un dns para que pueda resolver nombres...
@@ -48,3 +48,4 @@ subnet 10.0.9.0 netmask 255.255.255.0 {
   }
 }
 ~~~ 
+
