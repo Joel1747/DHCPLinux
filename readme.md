@@ -42,9 +42,8 @@ subnet 10.0.9.0 netmask 255.255.255.0 {
 
      host apache {
          hardware ethernet 00:10:5a:f1:35:87;
-         fixed-address 192.168.1.3;
+         fixed-address 10.0.9.223;
      }
-
   }
 }
 ~~~ 
