@@ -41,10 +41,39 @@ subnet 10.0.9.0 netmask 255.255.255.0 {
      max-lease-time 691200;
 
      host apache {
-         hardware ethernet 00:10:5a:f1:35:87;
+         hardware ethernet 08:00:27:9B:E3:C5;
          fixed-address 10.0.9.223;
      }
+
   }
 }
 ~~~ 
+
+## Comprobación al otorgale la _IP fija_ a un cliente
+
+Este el cliente al que le vamso a otorga la sigunete dirección IP
+~~~
+group {
+
+     default-lease-time 604800;
+     max-lease-time 691200;
+
+     host apache {
+         hardware ethernet 08:00:27:9B:E3:C5;
+         fixed-address 10.0.9.223;
+     }
+
+  }
+~~~
+
+### Cliente
+En este caso para comprobar que se le ha otorgado la _dirección IP_ correspondiente abriremos el terminal del cliente y en este caso como es Windows usaremos los sigunetes comandos:
+~~~
+ipconfig /all #para ver las caracteristicas de nuestras interfaces
+
+ipconfig /renew #para solicitar una dirección ip nueva
+
+ipconfig /release #para borrar la ip que tiene la interfaz
+~~~
+Como podremos apreciar en la sigunete captura le ha otorgado la IP sin problemas 
 
