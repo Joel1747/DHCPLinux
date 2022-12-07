@@ -77,3 +77,4 @@ ipconfig /release #para borrar la ip que tiene la interfaz
 ~~~
 Como podremos apreciar en la sigunete captura le ha otorgado la IP sin problemas 
 
+![Foto DHCP](https://github.com/Joel1747/DHCPLinux/blob/master/capturas/CapCliente.png)
